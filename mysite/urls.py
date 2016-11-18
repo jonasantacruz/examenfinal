@@ -7,4 +7,5 @@ urlpatterns = [
 
     url(r'^admin/', include(admin.site.urls)),
     url(r'', include('libro.urls')),
+    #url(r'^libro/new/$', views.libro_new, name='libro_new'),
 ]

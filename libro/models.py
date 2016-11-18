@@ -28,3 +28,36 @@ class Libro(models.Model):
 
     def __str__(self):
         return self.title
+
+#LAS DEMAS CLASES DEL MODELO COMPLETO
+
+#class Usuario(models.Model):
+
+#    nombre    = models.CharField(max_length=60)
+#    dpi      = isbn = models.PositiveIntegerField(primary_key=True, validators=[MaxValueValidator(9999999999999)])
+#    libros   = models.ManyToManyField(Libro, through='Biblioteca')
+
+#    def __str__(self):
+#        return self.nombre
+
+#class Biblioteca (models.Model):
+
+#    libro = models.ForeignKey(libro, on_delete=models.CASCADE)
+#    usuario = models.ForeignKey(Usuario, on_delete=models.CASCADE)
+
+
+#class BibliotecaInLine(admin.TabularInline):
+
+#    model = Biblioteca
+
+#    extra = 1
+
+
+#class LibroAdmin(admin.ModelAdmin):
+
+#    inlines = (BibliotecaInLine,)
+
+
+#class UsuarioAdmin (admin.ModelAdmin):
+
+#    inlines = (BibliotecaInLine,)
